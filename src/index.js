@@ -423,8 +423,8 @@ export default class Swipeable extends PureComponent {
     onPanResponderGrant: this._handlePanResponderStart,
     onPanResponderMove: this._handlePanResponderMove,
     onPanResponderRelease: this._handlePanResponderEnd,
-    onPanResponderTerminate: this._handlePanResponderEnd,
-    onPanResponderTerminationRequest: this._handlePanResponderEnd
+    onPanResponderTerminate: (evt, gestureState) => {},
+    onPanResponderTerminationRequest: (evt, gestureState) => {}
   });
 
   _handleLayout = ({nativeEvent: {layout: {width}}}) => this.setState({width});
