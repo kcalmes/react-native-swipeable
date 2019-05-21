@@ -30,6 +30,9 @@
     "type": "git",
     "url": "git+https://github.com/kcalmes/react-native-swipeable.git"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "react",
     "native",
